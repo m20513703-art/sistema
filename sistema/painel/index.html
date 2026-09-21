@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel | Sistema de Climatização</title>
+
+    <link rel="stylesheet" href="painel.css">
+</head>
+
+<body>
+
+    <main class="painel-container">
+
+        <header class="painel-topo">
+
+            <div>
+                <h1>❄️ Sistema de Climatização</h1>
+                <p id="saudacao">Bem-vindo!</p>
+            </div>
+
+            <button id="botaoSair" type="button">
+                Sair
+            </button>
+
+        </header>
+
+        <section class="informacoes">
+
+            <div class="info-box">
+                <span>Cliente</span>
+                <strong id="nomeCliente">---</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Empresa</span>
+                <strong id="nomeEmpresa">---</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Plano</span>
+                <strong id="planoCliente">---</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Teste grátis</span>
+                <strong id="testeGratis">14 dias</strong>
+            </div>
+
+        </section>
+
+        <section class="recursos">
+
+            <h2>Recursos disponíveis</h2>
+
+            <div class="recursos-grid">
+
+                <div class="recurso" id="recursoSite">
+
+                    <div class="icone">🌐</div>
+
+                    <h3>Site</h3>
+
+                    <p>
+                        Acesse e gerencie seu site.
+                    </p>
+
+                    <button type="button" onclick="acessarSite()">
+                        Acessar Site
+                    </button>
+
+                </div>
+
+                <div class="recurso bloqueado" id="recursoPedidos">
+
+                    <div class="icone">🧾</div>
+
+                    <h3>PDV de Pedidos</h3>
+
+                    <p id="textoPedidos">
+                        Disponível no Plano 2 ou Plano 3.
+                    </p>
+
+                    <button type="button" onclick="acessarPedidos()">
+                        Acessar PDV
+                    </button>
+
+                </div>
+
+                <div class="recurso bloqueado" id="recursoFinanceiro">
+
+                    <div class="icone">💰</div>
+
+                    <h3>PDV Financeiro</h3>
+
+                    <p id="textoFinanceiro">
+                        Disponível somente no Plano 3.
+                    </p>
+
+                    <button type="button" onclick="acessarFinanceiro()">
+                        Acessar Financeiro
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cancelamento">
+
+            <h2>Seu plano</h2>
+
+            <p>
+                Você está no período de teste grátis.
+                Se cancelar antes do fim dos 14 dias,
+                não haverá cobrança.
+            </p>
+
+            <button id="botaoCancelar" type="button">
+                Cancelar plano
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="painel.js"></script>
+
+</body>
+
+</html>
